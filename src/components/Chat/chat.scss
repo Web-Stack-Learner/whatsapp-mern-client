@@ -1,0 +1,82 @@
+.chat {
+  display: flex;
+  flex-direction: column;
+  flex: 0.65;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  &__header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #fff;
+    &-info {
+      flex: 1;
+      padding-left: 20px;
+      h3 {
+        font-size: 18px;
+        margin-bottom: 3px;
+        font-weight: 500;
+      }
+      p {
+        color: gray;
+      }
+    }
+  }
+  &__body {
+    flex: 1;
+    background-image: url('https://backgroundcheckall.com/wp-content/uploads/2017/12/whatsapp-background-1.png');
+    background-repeat: repeat;
+    background-position: center;
+    padding: 30px;
+    overflow: scroll;
+    &-reciver {
+      margin-left: auto;
+      background-color: #dcf8cd !important;
+    }
+    &-message {
+      position: relative;
+      font-size: 16px;
+      padding: 10px;
+      width: fit-content;
+      border-radius: 10px;
+      background-color: #fff;
+      margin-bottom: 30px;
+    }
+    &-name {
+      position: absolute;
+      top: -15px;
+      font-weight: 400;
+      font-size: xx-small;
+    }
+    &-timeStamps {
+      margin-left: 10px;
+      font-size: xx-small;
+    }
+  }
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+    border-top: 1px solid lightgray;
+    .MuiSvgIcon-root {
+      margin: 10px;
+      color: gray;
+    }
+    &__form {
+      flex: 1;
+      display: flex;
+      &-input {
+        flex: 1;
+        border: none;
+        padding: 10px;
+        border-radius: 30px;
+      }
+      button {
+        display: none;
+      }
+    }
+  }
+}
